@@ -5,7 +5,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 25vw 11vw 1.5vw 31.5vw 1.5vw 4.5vw 25vw;
-  grid-template-rows: 10vw 15vw 3vw 18vw 1.5vw 5vw 1.5vw 6vw auto;
+  grid-template-rows: 4vw 15vw 3vw 18vw 1.5vw 5vw 1.5vw 6vw auto;
   grid-column-gap: 0;
   grid-row-gap: 0;
   
