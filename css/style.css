@@ -1,11 +1,17 @@
 body {
-  background-color: #00000005;
+  background-image:url('../assets/wall-texture.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  /* background via pixabay https://pixabay.com/en/white-painted-wall-texture-white-2500981/ */
 }
 
 .container {
   display: grid;
   grid-template-columns: 25vw 11vw 1.5vw 31.5vw 1.5vw 4.5vw 25vw;
-  grid-template-rows: 4vw 15vw 3vw 18vw 1.5vw 5vw 1.5vw 6vw auto;
+  grid-template-rows: 3.5vw 15vw 3vw 18vw 1.5vw 5vw 1.5vw 6vw auto;
   grid-column-gap: 0;
   grid-row-gap: 0;
   
@@ -22,6 +28,15 @@ body {
 }
 
 /* area callouts */
+
+.canvas {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 9;
+  box-shadow: 0 0 10px rgba(0,0,0,.44);
+  z-index: 500;
+}
 .bottom {
   grid-area: bottom;
 }
@@ -29,7 +44,7 @@ body {
   grid-area: header;
 }
 .tr-white{
-  grid-area: tr-black;
+  grid-area: tr-white;
 }
 .htr-black{
   grid-area: htr-black;
