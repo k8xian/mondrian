@@ -1,0 +1,101 @@
+body {
+  background-color: #00000005;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 25vw 11vw 1.5vw 31.5vw 1.5vw 4.5vw 25vw;
+  grid-template-rows: 10vw 15vw 3vw 18vw 1.5vw 5vw 1.5vw 6vw auto;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  
+  grid-template-areas:
+    "header   header    header  header    header    header    header"
+    "mleft    tl-white  vblack  red-g     red-g     red-g     mright"
+    "mleft    htl-black vblack  red-g     red-g     red-g     mright"
+    "mleft    tml-white vblack  red-g     red-g     red-g     mright"
+    "mleft    hb-black  vblack  hmb-black hmb-black hmb-black mright"
+    "mleft    blue-g    vblack  bm-white  br-black  tr-white  mright"
+    "mleft    blue-g    vblack  bm-white  br-black  htr-black mright"
+    "mleft    blue-g    vblack  bm-white  br-black  yellow-g  mright"
+    "bottom   bottom    bottom  bottom    bottom    bottom    bottom";
+}
+
+/* area callouts */
+.bottom {
+  grid-area: bottom;
+}
+.navigation {
+  grid-area: header;
+}
+.tr-white{
+  grid-area: tr-black;
+}
+.htr-black{
+  grid-area: htr-black;
+}
+.br-black{
+  grid-area: br-black;
+}
+.bm-white{
+  grid-area: bm-white;
+}
+.hmb-black{
+  grid-area: hmb-black;
+}
+.hb-black{
+  grid-area: hb-black;
+}
+.mleft {
+  grid-area: mleft;
+}
+.mright {
+  grid-area: mright;
+}
+.tl-white {
+  grid-area: tl-white;
+}
+.vblack {
+  grid-area: vblack;
+}
+.red-g {
+  grid-area: red-g;
+}
+.blue-g{
+  grid-area: blue-g;
+}
+.yellow-g {
+  grid-area: yellow-g;
+}
+.htl-black {
+  grid-area: htl-black;
+}
+.tml-white {
+  grid-area: tml-white;
+}
+
+.htr-black {
+  grid-area: htr-black;
+}
+
+
+.tl-white, .tml-white, .bm-white, .tr-white{
+  background-color: white;
+}
+
+.vblack, .htl-black, .hb-black, .hmb-black, .br-black, .htr-black {
+  background-color: black;
+}
+
+.red-g {
+  background-color: #e02a1c;
+}
+
+.blue-g {
+  background-color: #0059a0;
+}
+
+.yellow-g {
+  background-color: #eedc64;
+}
+
