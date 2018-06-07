@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
+  font-family: 'Open Sans', sans-serif;
   /* background via pixabay https://pixabay.com/en/white-painted-wall-texture-white-2500981/ */
 }
 
@@ -114,3 +115,32 @@ body {
   background-color: #eedc64;
 }
 
+/* ------ styling ------ */
+
+.mleft {
+  padding: 20% 10%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  line-height: 1.2;
+  font-size: .8em;
+  color: rgba(0,0,0,.36);
+}
+
+.button {
+  background-color: rgba(0,0,0,.14);
+  width: 60%;
+  margin: 12% auto;
+  padding: 22px 0;
+  color: rgba(255,255,255,.8);
+  transition-duration: 1s;
+  transition-property: all;
+}
+
+.button:hover{
+  cursor: pointer;
+  background-color: rgba(0,0,0,.20);
+  color: rgba(255,255,255,.7);
+}
